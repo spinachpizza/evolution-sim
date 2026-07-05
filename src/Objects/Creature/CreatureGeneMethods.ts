@@ -102,10 +102,10 @@ export function mutateGenes(genes: Genes) : Genes {
 function calculateMetabolism(genes: Genes): number {
     let metabolism = 1;
 
-    metabolism += (genes.speed - 3) * 0.1;
-    metabolism += (genes.size - 3) * 0.085;
-    metabolism += (genes.vision - 3) * 0.04;
-    metabolism += (genes.strength - 3) * 0.04;
+    metabolism += (genes.speed - 3) * 0.15;
+    metabolism += (genes.size - 3) * 0.012;
+    metabolism += (genes.vision - 3) * 0.05;
+    metabolism += (genes.strength - 3) * 0.05;
 
     return metabolism
 }
