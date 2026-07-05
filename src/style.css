@@ -113,10 +113,7 @@ canvas {
     margin: 1px; 
 }
 
-#speed-button {
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
+.game-button {
     background: #FFF;
     color: black;
 
@@ -134,10 +131,22 @@ canvas {
 
     cursor: pointer;
 }
-
-#speed-button:hover {
+.game-button:hover {
     background: #EEE;
 }
+
+#speed-button {
+    position: fixed;
+    right: 25px;
+    top: 10px;
+}
+
+#menu-button {
+    position: fixed;
+    right: 135px;
+    top: 10px;
+}
+
 
 .menu {
     height: 100vh;

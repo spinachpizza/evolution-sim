@@ -18,10 +18,19 @@ let friendlyFire = true;
 
 let panelIndex = 0;
 
-
-playButton.onclick = () => {
+function closeMenu() {
     menuScreen.style.display = "none";
     gameScreen.style.display = "block";
+}
+
+export function openMenu() {
+    menuScreen.style.display = "flex";
+    gameScreen.style.display = "none";
+}
+
+
+playButton.onclick = () => {
+    closeMenu();
 
     if (!teamsEnabled) {
         creatureConfigs = creatureConfigs.slice(0, 1);
