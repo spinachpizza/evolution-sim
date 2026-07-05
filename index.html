@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evolution Simulator</title>
+</head>
+<body>
+
+    <div id="menu-screen" class="menu">
+
+        <h1 class="title">Evolution Simulator</h1>
+
+        <div class="creator-panel">
+
+            <h2>Creature Settings</h2>
+
+            <div class="stats-container">
+                
+                <div class="stat-row">
+                    <div class="stat-label">Speed</div>
+                    <div id="speed-stat-display" class="stat-value-label">0</div>
+                    <input class="stat-slider" type="range" min="1" max="10" id="speed">
+                </div>
+
+                <div class="stat-row">
+                    <div class="stat-label">Size</div>
+                    <div id="size-stat-display" class="stat-value-label">0</div>
+                    <input class="stat-slider" type="range" min="1" max="10" id="size">
+                </div>
+
+                <div class="stat-row">
+                    <div class="stat-label">Vision</div>
+                    <div id="vision-stat-display" class="stat-value-label">0</div>
+                    <input class="stat-slider" type="range" min="1" max="10" id="vision">
+                </div>
+
+                <div class="stat-row">
+                    <div class="stat-label">Aggression</div>
+                    <div id="aggression-stat-display" class="stat-value-label">0</div>
+                    <input class="stat-slider" type="range" min="1" max="10" id="aggression">
+                </div>
+
+                <div class="stat-row">
+                    <div class="stat-label">Strength</div>
+                    <div id="strength-stat-display" class="stat-value-label">0</div>
+                    <input class="stat-slider" type="range" min="1" max="10" id="strength">
+                </div>
+            </div>
+
+            <!-- Panel 4 -->
+            <div class="tab-content" id="panel4">
+                <div class="setting-inline">
+                    <label>Colour</label>
+                    <input type="color" id="color-picker">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="settings">
+
+            <div class="setting">
+                <label>Food Condition</label>
+
+                <select id="food-condition">
+                    <option value="1">Scarce</option>
+                    <option value="2">Low</option>
+                    <option value="3">Normal</option>
+                    <option value="4">Abundant</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="setting centered">
+
+            <label>Friendly Fire</label>
+
+            <div class="toggle" id="friendly-toggle">
+                <div class="toggle-knob"></div>
+            </div>
+
+        </div>
+
+        <div class="setting centered">
+            <button id="play-button" class="play-button">
+                Start Simulation
+            </button>
+        </div>
+
+    
+    </div>
+
+    <div id="game-screen" style="display: none;">
+
+        <div id="ui-bar-container" class="ui-bar-container">
+            <div class="population-bar" id="population-bar"></div>
+        </div>
+
+        <button id="speed-button">
+            Speed x1
+        </button>
+
+        <div class="canvas-container">
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <div id="creature-panel" class="hidden"></div>
+
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
