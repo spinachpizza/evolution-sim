@@ -112,7 +112,7 @@ export class Creature {
             return this.reproduce();
         }
 
-        this.state.energy -= (5 * this.stats.metabolism) * delta;
+        this.state.energy -= (3 * this.stats.metabolism) * delta;
         this.state.age += 1 * delta;
     }
 
