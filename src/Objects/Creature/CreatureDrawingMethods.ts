@@ -43,6 +43,7 @@ export function addEyes(ctx: CanvasRenderingContext2D, thisCreature: Creature) {
     ctx.fill();
 }
 
+/*
 export function addLegs(ctx: CanvasRenderingContext2D, thisCreature: Creature) {
     const x = thisCreature.position.x;
     const y = thisCreature.position.y;
@@ -93,6 +94,7 @@ function rotate(x: number, y: number, angle: number) {
     };
 }
 
+/*
 function addLeg(ctx: CanvasRenderingContext2D,
     x: number, 
     y: number,
@@ -242,6 +244,7 @@ function drawCurvedLimb(
     ctx.stroke();
 }
 */
+
 export function addDamageFlash(ctx: CanvasRenderingContext2D, thisCreature: Creature) {
     const alpha = thisCreature.damageFlash / thisCreature.damageFlashDuration;
 

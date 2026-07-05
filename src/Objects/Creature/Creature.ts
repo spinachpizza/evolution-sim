@@ -4,7 +4,7 @@ import type { Genes } from "../../Types/Genes";
 import type { Position } from "../../Types/Position";
 import type { Stats } from "../../Types/Stats";
 import type { Food } from "../Food";
-import { addDamageFlash, addDeathAnimation, addEyes, addLegs, getColor } from "./CreatureDrawingMethods";
+import { addDamageFlash, addDeathAnimation, addEyes, getColor } from "./CreatureDrawingMethods";
 import { getStatsFromGenes, mutateGenes } from "./CreatureGeneMethods";
 import { findNearestEnemy, findNearestFood } from "./CreatureMovementMethods";
 
