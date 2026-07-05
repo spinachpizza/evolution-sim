@@ -7,6 +7,9 @@ const button = document.getElementById("speed-button")!;
 
 button.onclick = () => {
 
+    if (!game)
+        return
+
     if (game.gameSpeed === 1) {
         game.gameSpeed = 2;
     }
